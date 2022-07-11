@@ -60,25 +60,8 @@ end)
 Section:NewButton("Worthiness Up to 2", "", function()
     game:GetService("Workspace").Living.efwfwfwefdsf4rw.RemoteFunction:InvokeServer("LearnSkill", WorthinessUp)
 end)
-local Tab = Window:NewTab("Teleport Menu")
--- Подсекция
-local Section = Tab:NewSection("Section Name")
--- Заголовок
-Section:NewLabel("LabelText")
-Section:NewButton("EnableSpeedHack", SpeedHackEnable, function()
-    
-end)
-
--- Переключатель
-Section:NewToggle("ToggleText", "ToggleInfo", function(state)
-    if state then
-        print("Toggle On")
-    else
-        print("Toggle Off")
-    end
-end)
-
--- Слайдер
+local Tab = Window:NewTab("Player's Settings")
+local Section = Tab:NewSection("Movement")
 Section:NewSlider("WalkSpeed", "Info", 500, 25, function(s) -- 500 (Макс. значение) | 0 (Мин. значение)
 	x = s
 end)
@@ -86,22 +69,9 @@ Section:NewSlider("JumpPower", "Info", 500, 25, function(o) -- 500 (Макс. з
 	j = o
 end)
 
--- Текст Бокс
-Section:NewTextBox("Speed", "Speed", function(txt)
-	
-end)
-
--- Бинд на клавиши
-Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
-	print("You just clicked the bind")
-end)
-
--- Дропдаун
-Section:NewDropdown("DropdownText", "DropdownInf", {"Option 1", "Option 2", "Option 3"}, function(currentOption)
-    print(currentOption)
-end)
-
 while game:GetService("RunService").RenderStepped:wait() do
-game.Players.LocalPlayer.Character.Humanoid.JumpPower = j
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = x
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = j
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = x
 end
+
+
