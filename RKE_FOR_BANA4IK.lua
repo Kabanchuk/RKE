@@ -79,7 +79,7 @@ end)
 Section:NewSlider("JumpPower", "Info", 500, 25, function(o) -- 500 (Макс. значение) | 0 (Мин. значение)
 	j = o
 end)
-local Tab = Window:NewTab("Player's Settings")
+local Tab = Window:NewTab("Fast Quest")
 -- Подсекция
 local Section = Tab:NewSection("Get Quest")
 Section:NewButton("20lvlDraculaQuest", "", function()
