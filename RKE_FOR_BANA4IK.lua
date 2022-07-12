@@ -7,8 +7,8 @@ local j = 50--от 1 до 8
 local y = false
 local SpeedHackEnable = false
 function ActiveEsp(On)
-	On = Active
 	while On do
+	print("ok")
 		while wait(0.5) do
 		for i, childrik in ipairs(workspace:GetDescendants()) do
 			if childrik:FindFirstChild("Humanoid") then
@@ -96,7 +96,7 @@ Section:NewButton("Drop Roka", "", function()
     game:GetService("Workspace").Living.tuykgfhmut.RemoteEvent:FireServer("DropItem", game:GetService("Players").tuykgfhmut.Backpack.Rokakaka)
 end)
 Section:NewButton("Drop Arrow", "", function()
-    game:GetService("Workspace").Living.tuykgfhmut.RemoteEvent:FireServer("DropItem", game:GetService("Players").tuykgfhmut.Backpack.Rokakaka)
+    game:GetService("Workspace").Living.tuykgfhmut.RemoteEvent:FireServer("DropItem", game:GetService("Players").tuykgfhmut.Backpack["Mysterious Arrow"])
 end)
 local Tab = Window:NewTab("Player's Settings")
 -- Подсекция
@@ -125,6 +125,7 @@ Section:NewToggle("PlayerESP", "ToggleInfo", function(state)
 end)
 
 while game:GetService("RunService").RenderStepped:wait() do
+	ActiveEsp(Active)
 	game.Players.LocalPlayer.Character.Humanoid.JumpPower = j
 	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = x
 end
