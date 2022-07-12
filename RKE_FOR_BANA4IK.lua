@@ -6,6 +6,18 @@ local x = 22
 local j = 50--от 1 до 8
 local y = false
 local SpeedHackEnable = false
+local QuestDioParking30lvl = 
+{
+	["NPC"] = "Dopey", 
+	["Option"] = "Option1", 
+	["Dialogue"] = "Dialogue3"
+}
+local ActiveQuestCorruptPolice10 = 
+{
+	["NPC"] = "Deputy Bertrude", 
+	["Option"] = "Option1", 
+	["Dialogue"] = "Dialogue2"
+}
 function ActiveEsp(On)
 	while On do
 	print("ok")
@@ -29,6 +41,12 @@ function ActiveEsp(On)
 	end
 		end
 end
+local QuestAlphaTug15lvl = 
+{
+	["NPC"] = "Lion Abbacho's Partner", 
+	["Option"] = "Option1", 
+	["Dialogue"] = "Dialogue6"
+}
 local AutoTask20 = 
 {
 	["NPC"] = "Dracula", 
@@ -114,6 +132,15 @@ local Section = Tab:NewSection("Get Quest")
 Section:NewButton("20lvlDraculaQuest", "", function()
     game:GetService("Workspace").Living.tuykgfhmut.RemoteEvent:FireServer("EndDialogue", AutoTask20)
 end)
+Section:NewButton("QuestCorruptPolice10lvl", "", function()
+    game:GetService("Workspace").Living.tuykgfhmut.RemoteEvent:FireServer("EndDialogue", ActiveQuestCorruptPolice10)
+end)
+Section:NewButton("QuestAlphaTug15lvl", "", function()
+    game:GetService("Workspace").Living.tuykgfhmut.RemoteEvent:FireServer("EndDialogue", QuestAlphaTug15lvl)
+end)
+Section:NewButton("QuestDio30Parkinglvl", "", function()
+    game:GetService("Workspace").Living.tuykgfhmut.RemoteEvent:FireServer("EndDialogue", QuestDioParking30lvl)
+end)
 local Tab = Window:NewTab("ESP")
 local Section = Tab:NewSection("ESP")
 Section:NewToggle("PlayerESP", "ToggleInfo", function(state)
@@ -129,3 +156,5 @@ while game:GetService("RunService").RenderStepped:wait() do
 	game.Players.LocalPlayer.Character.Humanoid.JumpPower = j
 	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = x
 end
+
+
