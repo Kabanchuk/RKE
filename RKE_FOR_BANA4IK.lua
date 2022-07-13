@@ -89,7 +89,7 @@ local FastArcade =
 	["Dialogue"] = "Dialogue1"
 }
 -- Секция
-local Tab = Window:NewTab("FastAction")
+local Tab = Window:NewTab("Ваня гей")
 local Section = Tab:NewSection("FastMode")
 Section:NewButton("Fast Arcade", "", function()
     game:GetService("Workspace").Living.tuykgfhmut.RemoteEvent:FireServer("EndDialogue", FastArcade)
