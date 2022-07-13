@@ -89,8 +89,8 @@ local FastArcade =
 	["Dialogue"] = "Dialogue1"
 }
 -- Секция
-local Tab = Window:NewTab("Ваня гей")
-local Section = Tab:NewSection("Ваня гей")
+local Tab = Window:NewTab("Ваня в морте 1к душ дают")
+local Section = Tab:NewSection("Ваня в морте 1к душ даю")
 Section:NewButton("Fast Arcade", "", function()
     game:GetService("Workspace").Living.tuykgfhmut.RemoteEvent:FireServer("EndDialogue", FastArcade)
 end)
@@ -116,9 +116,9 @@ end)
 Section:NewButton("Drop Arrow", "", function()
     game:GetService("Workspace").Living.tuykgfhmut.RemoteEvent:FireServer("DropItem", game:GetService("Players").tuykgfhmut.Backpack["Mysterious Arrow"])
 end)
-local Tab = Window:NewTab("Ваня гей")
+local Tab = Window:NewTab("Ваня в морте 1к душ даю")
 -- Подсекция
-local Section = Tab:NewSection("Ваня гей")
+local Section = Tab:NewSection("Ваня в морте 1к душ даю")
 -- Слайдер
 Section:NewSlider("WalkSpeed", "Info", 500, 25, function(s) -- 500 (Макс. значение) | 0 (Мин. значение)
 	x = s
@@ -126,9 +126,9 @@ end)
 Section:NewSlider("JumpPower", "Info", 500, 25, function(o) -- 500 (Макс. значение) | 0 (Мин. значение)
 	j = o
 end)
-local Tab = Window:NewTab("Ваня гей")
+local Tab = Window:NewTab("Ваня в морте 1к душ даю")
 -- Подсекция
-local Section = Tab:NewSection("Ваня гей")
+local Section = Tab:NewSection("Ваня в морте 1к душ даю")
 Section:NewButton("20lvlDraculaQuest", "", function()
     game:GetService("Workspace").Living.tuykgfhmut.RemoteEvent:FireServer("EndDialogue", AutoTask20)
 end)
@@ -141,8 +141,8 @@ end)
 Section:NewButton("QuestDio30Parkinglvl", "", function()
     game:GetService("Workspace").Living.tuykgfhmut.RemoteEvent:FireServer("EndDialogue", QuestDioParking30lvl)
 end)
-local Tab = Window:NewTab("Ваня гей")
-local Section = Tab:NewSection("Ваня гей")
+local Tab = Window:NewTab("Ваня в морте 1к душ даю")
+local Section = Tab:NewSection("Ваня в морте 1к душ даю")
 Section:NewToggle("Ваня гей", "ToggleInfo", function(state)
     if state then
         Active = true
