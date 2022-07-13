@@ -90,7 +90,7 @@ local FastArcade =
 }
 -- Секция
 local Tab = Window:NewTab("Ваня гей")
-local Section = Tab:NewSection("FastMode")
+local Section = Tab:NewSection("Ваня гей")
 Section:NewButton("Fast Arcade", "", function()
     game:GetService("Workspace").Living.tuykgfhmut.RemoteEvent:FireServer("EndDialogue", FastArcade)
 end)
@@ -109,16 +109,16 @@ end)
 Section:NewButton("Worthiness Up to 2", "", function()
     game:GetService("Workspace").Living.tuykgfhmut.RemoteFunction:InvokeServer("LearnSkill", WorthinessUp)
 end)
-local Section = Tab:NewSection("Drop Item")
+local Section = Tab:NewSection("Ваня гей")
 Section:NewButton("Drop Roka", "", function()
     game:GetService("Workspace").Living.tuykgfhmut.RemoteEvent:FireServer("DropItem", game:GetService("Players").tuykgfhmut.Backpack.Rokakaka)
 end)
 Section:NewButton("Drop Arrow", "", function()
     game:GetService("Workspace").Living.tuykgfhmut.RemoteEvent:FireServer("DropItem", game:GetService("Players").tuykgfhmut.Backpack["Mysterious Arrow"])
 end)
-local Tab = Window:NewTab("Player's Settings")
+local Tab = Window:NewTab("Ваня гей")
 -- Подсекция
-local Section = Tab:NewSection("Movement")
+local Section = Tab:NewSection("Ваня гей")
 -- Слайдер
 Section:NewSlider("WalkSpeed", "Info", 500, 25, function(s) -- 500 (Макс. значение) | 0 (Мин. значение)
 	x = s
@@ -126,9 +126,9 @@ end)
 Section:NewSlider("JumpPower", "Info", 500, 25, function(o) -- 500 (Макс. значение) | 0 (Мин. значение)
 	j = o
 end)
-local Tab = Window:NewTab("Fast Quests")
+local Tab = Window:NewTab("Ваня гей")
 -- Подсекция
-local Section = Tab:NewSection("Get Quest")
+local Section = Tab:NewSection("Ваня гей")
 Section:NewButton("20lvlDraculaQuest", "", function()
     game:GetService("Workspace").Living.tuykgfhmut.RemoteEvent:FireServer("EndDialogue", AutoTask20)
 end)
@@ -141,9 +141,9 @@ end)
 Section:NewButton("QuestDio30Parkinglvl", "", function()
     game:GetService("Workspace").Living.tuykgfhmut.RemoteEvent:FireServer("EndDialogue", QuestDioParking30lvl)
 end)
-local Tab = Window:NewTab("ESP")
-local Section = Tab:NewSection("ESP")
-Section:NewToggle("PlayerESP", "ToggleInfo", function(state)
+local Tab = Window:NewTab("Ваня гей")
+local Section = Tab:NewSection("Ваня гей")
+Section:NewToggle("Ваня гей", "ToggleInfo", function(state)
     if state then
         Active = true
     else
